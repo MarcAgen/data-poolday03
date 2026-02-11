@@ -8,6 +8,5 @@ import pymongo as mongo
 
 def get_db(host:str, port:int, db_name:str):
 
-    client = mongo.MongoClient(host + ":" + port)
+    client = mongo.MongoClient(host + ":" + str(port))
     return client[db_name]
-
